@@ -1,0 +1,41 @@
+{
+  "name": "create-nitro-server",
+  "description": "Create Server using Nitro",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "preview": "nitro preview",
+    "typecheck": "tsc --noEmit --checkers 8",
+    "prepare": "husky",
+    "fmt": "oxfmt && oxfmt --check",
+    "lint": "oxlint",
+    "release": "node scripts/release.ts"
+  },
+  "engines": {
+    "node": "^26.0.0"
+  },
+  "dependencies": {
+    "better-result": "^3.0.0",
+    "valibot": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "changelogen": "^0.6.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "nitro": "latest",
+    "oxfmt": "^0.61.0",
+    "oxlint": "^1.76.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "typescript": "latest"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.20.0",
+      "onFail": "download"
+    }
+  }
+}
