@@ -50,7 +50,6 @@ export default defineConfig({
     'grouped-accessor-pairs': 'error',
     'guard-for-in': 'error',
     'init-declarations': 'error',
-    'max-classes-per-file': 'error',
     'max-depth': 'error',
     'max-nested-callbacks': 'error',
     'misrefactored-assign-op': 'error',

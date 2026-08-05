@@ -80,3 +80,5 @@ Refer to `node_modules/nitro/dist/docs/README.md` when working on server (your k
 ## LLM References
 
 - Nitro V3 <https://nitro.build/llms.txt>
+- Drizzle <https://orm.drizzle.team/llms.txt>
+- Better Auth <https://better-auth.com/llms.txt>

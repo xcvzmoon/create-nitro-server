@@ -15,13 +15,53 @@ const dbConfig = Config.nested(
   'DB',
 );
 
+const authConfig = Config.nested(
+  Config.all({
+    secret: Config.redacted('SECRET'),
+    url: Config.url('URL'),
+  }),
+  'BETTER_AUTH',
+);
+
+const googleConfig = Config.nested(
+  Config.all({
+    clientId: Config.string('CLIENT_ID'),
+    clientSecret: Config.redacted('CLIENT_SECRET'),
+  }),
+  'GOOGLE',
+);
+
+const mailConfig = Config.nested(
+  Config.all({
+    host: Config.string('HOST'),
+    port: Config.integer('PORT'),
+    secure: Config.boolean('SECURE').pipe(Config.withDefault(false)),
+    user: Config.string('USER'),
+    password: Config.redacted('PASSWORD'),
+    from: Config.string('FROM'),
+  }),
+  'SMTP',
+);
+
+const dymoConfig = Config.nested(
+  Config.all({
+    apiKey: Config.redacted('API_KEY'),
+  }),
+  'DYMO',
+);
+
 export const appConfigSchema = Config.all({
   nodeEnv: Config.literal(
     'development',
     'testing',
     'production',
   )('NODE_ENV').pipe(Config.withDefault('development')),
+  appName: Config.string('APP_NAME'),
   db: dbConfig,
+  auth: authConfig,
+  google: googleConfig,
+  mail: mailConfig,
+  dymo: dymoConfig,
 });
 
 let cachedConfig: AppConfig | undefined = undefined;

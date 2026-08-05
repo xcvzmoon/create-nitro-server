@@ -15,5 +15,5 @@ export default defineConfig({
     newlinesBetween: false,
   },
   singleQuote: true,
-  ignorePatterns: ['CHANGELOG.md'],
+  ignorePatterns: ['CHANGELOG.md', '**/*.hbs'],
 });
