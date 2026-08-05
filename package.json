@@ -9,6 +9,9 @@
     "preview": "nitro preview",
     "typecheck": "tsc --noEmit --checkers 8",
     "start": "node  --env-file=.env .output/server/index.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:verbose": "vitest run --reporter=verbose",
     "prepare": "husky",
     "fmt": "oxfmt && oxfmt --check",
     "lint": "oxlint",
@@ -48,7 +51,8 @@
     "oxfmt": "^0.61.0",
     "oxlint": "^1.76.0",
     "oxlint-tsgolint": "^7.0.2001",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitest": "^4.1.10"
   },
   "devEngines": {
     "packageManager": {

@@ -70,10 +70,24 @@ jobs:
       - name: Build
         run: pnpm run build
 
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup project
+        uses: ./.github/actions/setup-project
+
+      - name: Run tests
+        run: pnpm run test
+
   ci:
     name: CI
     if: always()
-    needs: [lint, format, typecheck, build]
+    needs: [lint, format, typecheck, build, test]
     runs-on: ubuntu-latest
     steps:
       - name: Check job results
