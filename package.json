@@ -29,30 +29,30 @@
   "dependencies": {
     "@dymo-api/better-auth": "^1.2.33",
     "@opentelemetry/api": "^1.9.1",
-    "better-auth": "^1.6.25",
+    "better-auth": "^1.7.2",
     "consola": "^3.4.2",
-    "drizzle-orm": "1.0.0-rc.4",
+    "drizzle-orm": "1.0.0-rc.5-169397b",
     "drizzle-query-logger": "^1.1.2",
     "effect": "^3.22.1",
     "handlebars": "^4.7.9",
     "postgres": "^3.4.9",
     "unemail": "^0.5.0",
-    "uuid": "^14.0.1",
+    "uuid": "^14.0.2",
     "valibot": "^1.4.2"
   },
   "devDependencies": {
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "drizzle-kit": "1.0.0-rc.4",
-    "h3": "2.0.1-rc.22",
+    "drizzle-kit": "1.0.0-rc.5-ab785fc",
+    "h3": "2.0.1-rc.29",
     "husky": "^9.1.7",
-    "lint-staged": "^17.3.0",
+    "lint-staged": "^17.4.1",
     "nitro": "latest",
-    "oxfmt": "^0.61.0",
-    "oxlint": "^1.76.0",
+    "oxfmt": "^0.65.0",
+    "oxlint": "^1.80.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript": "latest",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "devEngines": {
     "packageManager": {
