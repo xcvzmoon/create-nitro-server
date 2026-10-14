@@ -29,30 +29,30 @@
   "dependencies": {
     "@dymo-api/better-auth": "^1.2.33",
     "@opentelemetry/api": "^1.9.1",
-    "better-auth": "^1.6.25",
+    "better-auth": "^1.7.7",
     "consola": "^3.4.2",
-    "drizzle-orm": "1.0.0-rc.4",
+    "drizzle-orm": "1.0.0-rc.5-5935859",
     "drizzle-query-logger": "^1.1.2",
-    "effect": "^3.22.1",
-    "handlebars": "^4.7.9",
+    "effect": "^4.0.3",
+    "handlebars": "^4.7.10",
     "postgres": "^3.4.9",
-    "unemail": "^0.5.0",
-    "uuid": "^14.0.1",
-    "valibot": "^1.4.2"
+    "unemail": "^0.7.0",
+    "uuid": "^14.0.3",
+    "valibot": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "drizzle-kit": "1.0.0-rc.4",
-    "h3": "2.0.1-rc.22",
+    "drizzle-kit": "1.0.0-rc.5-5935859",
+    "h3": "2.0.2",
     "husky": "^9.1.7",
-    "lint-staged": "^17.3.0",
+    "lint-staged": "^17.6.0",
     "nitro": "latest",
-    "oxfmt": "^0.61.0",
-    "oxlint": "^1.76.0",
-    "oxlint-tsgolint": "^7.0.2001",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "oxlint-tsgolint": "^7.0.2004",
     "typescript": "latest",
-    "vitest": "^4.1.10"
+    "vitest": "^5.0.3"
   },
   "devEngines": {
     "packageManager": {
